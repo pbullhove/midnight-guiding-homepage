@@ -1,0 +1,81 @@
+https://jamesclear.com/
+https://aliabdaal.com/
+
+# CSS
+
+In order to get a scroll bar when too large for the box: 
+overflow: auto
+
+In order to have the scale of the border and padding not increase the size of the box:
+box-sizing: border-box. 
+(Do this for all elements. )
+
+To get a span to respect width and heigth: 
+display: inline-block
+
+
+Absolute positioning:
+then it's like it's on another layer, and will not affect the others. 
+
+Do mobile-first development: then resize for larger screens. 
+
+@media screen and (min-width: 600) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+
+Downloaded font: 
+@font-face {
+  font-family: "opensans";
+  src: url("/fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"),
+    url("/fonts/open-sans/opensans-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url("/fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"),
+    url("/fonts/open-sans/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+
+
+.withbackgroundimage {
+  background-image: url("/images/bg-paper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+Free Icons: 
+flaticon.com
+
+Should Sprite your logos and icons. Reduce the number of http requests your images will be gotten with one http request instead of one GET for every image. 
+- cssspritestool.com
+- will then have one png image with all your icons. 
+- and you apply some css code that is also generated, to get the specific locations for that image. 
+- should use spans with background-image to display these sprites. 
+- should not combine big images (like photos of people, not very flexible)
+- use this for small images like locos and icons. 
+
+Very small and simple icons can ge put directly into your html code. 
+- Search for data uri generator. 
+- This generates a string that represents your icon. Then embed this directly into img. 
+- <img alt="" src="data:image/png";base64..."/>
+- Dont use this though, slow on mobile. 
+
+
+Can clip / crop images directly in css.
+- find the code with css clip maker online tools. 
+- clip-path: polygon(...)
+
+Can also apply filters directly in css. 
+- can be applied on hover, which is pretty cool. 
+- like all images are grayscale, and color on the one that you hover over. 
