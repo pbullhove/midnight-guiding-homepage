@@ -79,3 +79,46 @@ Can clip / crop images directly in css.
 Can also apply filters directly in css. 
 - can be applied on hover, which is pretty cool. 
 - like all images are grayscale, and color on the one that you hover over. 
+
+Multi-resolution images. 
+- save images in multiple resolutions. 
+- then apply srcset with multiple image resolution, and your computer picks the one that fits best. 
+- only apply this for images that are supposed to look super-sharp. 
+      <img 
+        src="images/meal.jpg"
+        srcset="
+          images/meal.jpg 400w, 
+          images/meal.jpg 800w, 
+          images/meal.jpg 1200w, 
+        "
+        sizes="
+          (max-width: 500px) 100vw,
+          (max-width: 700px) 50vw,
+          33vw
+        "
+      />
+- This can be done easily with online tools as well. "Responsive breakpoints". 
+
+You want to have a lot of images in .webp format. They are smaller and faster to load. 
+- internet explorer does not support this. 
+- so you should do
+  <picture>
+    <source type="image/webp" srcset="images/meal.webp"/>
+    <source type="image/jpeg" srcset="images/meal.jpg"/>
+    <img src="images/meal.jpg" alt="A boal of salmon and curry."/>
+  </picture>
+
+
+Art Direction (different images for different size medias. )
+- Cropping for different sizes. Mobile crop and zoom.
+- So you have different images, where some are cropped. 
+<picture>
+    <source media="(max-width:500px) "type="image/webp" srcset="images/meal.webp"/>
+    <source media="(min-width:501px) type="image/jpeg" srcset="images/meal2.jpg"/>
+    <img src="images/meal.jpg" alt="A boal of salmon and curry."/>
+  </picture>
+
+
+SVG
+- svgbackgrounds.com
+- also have icon fonts, which makes it easy to get a lot of icons. 
