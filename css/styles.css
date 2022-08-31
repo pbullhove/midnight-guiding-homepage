@@ -337,6 +337,7 @@ a {
 .plan__description {
   font-size: 2rem;
   letter-spacing: 1px;
+  display: block;
 }
 
 .plan .list__item {
