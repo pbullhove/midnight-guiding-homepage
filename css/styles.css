@@ -11,8 +11,9 @@
   --color-heading: #111;
   --color-text: #333;
   --color-text-light: #fff;
+  --color-border: #ccc;
   --box-shadow: rgba(0, 0, 0, 0.2);
-  --box-corner-radius: 10px;
+  --box-corner-radius: 30px;
 }
 
 *,
@@ -106,7 +107,7 @@ a {
 /* ---------- Badges ----------  */
 
 .badge {
-  border-radius: 20px;
+  border-radius: var(--box-corner-radius);
   font-size: 2rem;
   font-weight: 600;
   padding: 0.5rem 2rem;
@@ -246,6 +247,41 @@ a {
 
 @media screen and (min-width: 1024px) {
   .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* ---------- Inputs ----------  */
+
+.input {
+  border-radius: var(--box-corner-radius);
+  border: 1px solid var(--color-border);
+  color: var(--color-heading);
+  outline: none;
+  padding: 1.5rem 3.5rem;
+}
+::placeholder {
+  color: #cdcbd7;
+  font-size: 2rem;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--box-corner-radius);
+  display: flex;
+}
+
+.input-group .input {
+  flex-grow: 1;
+  border: none;
+}
+
+.input-group .btn {
+  margin: 1px;
+}
+
+@media screen and (min-width: 1024px) {
+  ::placeholder {
     font-size: 1.5rem;
   }
 }
