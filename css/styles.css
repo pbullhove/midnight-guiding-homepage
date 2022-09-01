@@ -216,6 +216,11 @@ a {
   display: inline-block;
 }
 
+.btn--streched {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
 .btn--primary {
   background: var(--color-primary);
   color: var(--color-text-light);
@@ -478,5 +483,43 @@ a {
   }
   .testimonial__image > .icon-container {
     right: -32px;
+  }
+}
+
+/* ---------- Callout ----------  */
+
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.callout__title {
+  color: white;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout {
+    text-align: left;
+  }
+  .callout .btn {
+    justify-self: start;
+    margin: 0 3rem;
   }
 }
