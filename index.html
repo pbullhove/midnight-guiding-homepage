@@ -9,6 +9,22 @@
     <title>Document</title>
   </head>
   <body>
+    <nav class="nav collapsible">
+      <span class="icon-container icon-container--white">
+        <a href="/"
+          ><img class="nav__logo-image" src="/images/arrow.svg" alt=""
+        /></a>
+      </span>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
     <script src="js/main.js"></script>
   </body>
 </html>
