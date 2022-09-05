@@ -566,9 +566,17 @@ a {
 /* ---------- Blocks ----------  */
 
 .block {
-  padding: 6rem 2rem;
-  border: 2px solid red;
-  margin: 1rem;
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.block__header {
+  text-align: center;
 }
 
 .block__heading {
@@ -582,4 +590,14 @@ a {
 
 .block--dark .block__heading {
   color: white;
+}
+
+.block--skewed-rigth {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
