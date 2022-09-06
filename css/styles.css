@@ -200,8 +200,8 @@ a {
   background: black;
 }
 
-.icon-container--white {
-  background: white;
+.icon-container--gray {
+  background: rgb(226, 226, 226);
 }
 
 /* ---------- Buttons ----------  */
@@ -760,4 +760,33 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* ---------- Features Block ----------  */
+
+.feature {
+  gap: 4rem 4rem;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__content {
+  align-self: center;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
