@@ -346,6 +346,10 @@ a {
 
 /* ---------- Plans ----------  */
 
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
 .plan__name {
   color: var(--color-text-light);
   margin: 0;
@@ -387,6 +391,10 @@ a {
   right: 5%;
 }
 
+.plan:hover {
+  transform: scale(1.05);
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -396,6 +404,12 @@ a {
   }
   .plan__description {
     font-size: 1.7rem;
+  }
+  .plan--popular {
+    transform: scale(1.1);
+  }
+  .plan--popular:hover {
+    transform: scale(1.15);
   }
 }
 
@@ -712,7 +726,7 @@ a {
   }
 }
 
-/* ---------- Domajn ----------  */
+/* ---------- Domain ----------  */
 
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
@@ -735,4 +749,15 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* ---------- Plans Block ----------  */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
