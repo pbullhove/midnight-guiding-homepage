@@ -8,16 +8,56 @@
     <title>Bull - IT Consulting in Oslo</title>
   </head>
   <body>
+
+<!-- Navbar -->
+
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/">P. Bull</a>
+      <svg class="icon icon--white nav__toggler">
+        <use href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    
+<!--  Hero  -->
+
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content" data-aos="fade-right">
+          <h1 class="block__heading">IT konsulent i Oslo</h1>
+          <p class="hero__tagline">Jeg har kunnskapen du trenger.</p>
+          <a href="" class="btn btn--accent btn--streched">KONTAKT MEG</a>
+        </header>
+        <picture data-aos="fade-up">
+          <source
+            type="image/webp"
+            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x"
+          />
+          <img class="hero__image" src="images/banner.png" alt="" />
+        </picture>
+      </div>
+    </section>
+    
+<!--  Features  -->
+
     <section class="block container">
-      <header class="block__header">
-        <h2>Host on the Cloud to Keep Growing</h2>
+      <header class="block__header" data-aos="fade-up">
+        <h2>Erfaring fra Mange Forskjellige Prosjekter</h2>
         <p>
-          Lorem Lorem ipsum dolor sit amet. dignissimos rerum, at eligendi labore
-          hic.
+          Sjekk ut prosjektene mine! 
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="zoom-in">
           <span class="icon-container icon-container--gray">
             <svg class="icon icon--primary">
               <use href="images/sprite.svg#computer"></use>
@@ -31,7 +71,7 @@
           </p>
           <a class="link-arrow" ref="#">LEARN MORE</a>
         </div>
-        <picture>
+        <picture data-aos="fade-up">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -71,6 +111,138 @@
         </picture>
       </article>
     </section>
+
+<!--  Showcase Dark  -->
+
+<section class="block block--dark block--skewed-right showcase">
+  <header class="block__header showcase__header">
+    <h2>User-Friendly Control Panel</h3>
+  </header>
+  <div class="container grid grid--1x2">
+    <picture data-aos="fade-right">
+      <source
+        type="image/webp"
+        srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+      />
+      <source
+        type="image/png"
+        srcset="images/banner.png 1x, images/banner@2x.png 2x"
+      />
+      <img class="showcase__image" src="images/banner.png" alt="" />
+    </picture>
+    <ul class="list showcase__content" data-aos="fade-up">
+      <li>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#snap"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Easy Start & Managed Updates</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus
+              voluptatum cumque dicta!
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#snap"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Easy Start & Managed Updates</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus
+              voluptatum cumque dicta!
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#snap"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Easy Start & Managed Updates</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus
+              voluptatum cumque dicta!
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+</section>
+    
+<!--  Footer  -->
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading">PRODUCTS</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron" class="blue" />
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+            doloribus.
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading">ITEMS</h2>
+            <svg class="icon icon--white collapsible__chevron">
+                <use href="images/sprite.svg#chevron" class="blue" />
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+            doloribus.
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading">LINKS</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron" class="blue" />
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+            doloribus.
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading">COMPANY</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron" class="blue" />
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+            doloribus.
+          </div>
+        </section>
+        <div class="block__header footer__brand">
+          <img class="footer__logo-image" src="icons/logo.svg" alt="" />
+          <p class="footer__copyright">Copyright 2022 Peter Bull Hove</p>
+        </div>
+      </div>
+    </footer>
+
+<!-- Scripts -->
     
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
