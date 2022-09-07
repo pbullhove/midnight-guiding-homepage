@@ -1,0 +1,19 @@
+Building for production. 
+- Minimize images, combining files etc. 
+
+
+Webpack is good, but difficult. 
+
+Parcel is very nice, so use this. parceljs.org. 
+download nodejs.org
+
+npm init -y
+
+npm i -D parcel-bundler
+
+må nå kjøre med
+- parcel index.html
+
+
+parcel build index.html
+- sliter med xlink - så slett denne prefix. 
