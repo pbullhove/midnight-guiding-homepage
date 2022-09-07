@@ -1,4 +1,7 @@
-images/
+legacy/images/
+legacy/part1/images/
+legacy/Moshify/images/
+legacy/Moshify/code/Moshify/images/
 videos/
 psd/
 *.psd
