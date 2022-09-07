@@ -1,0 +1,9 @@
+{
+  "name": "peterbullhove-homepage",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

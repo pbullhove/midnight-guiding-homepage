@@ -1,0 +1,9 @@
+app.netlify.com
+
+
+1. install nodejs
+2. npm i -y
+3. npm i -D parcel-bundler
+3. npm i -g parcel_bundler
+4. parcel index.html
+5. parcel build index.html
