@@ -819,3 +819,85 @@ a {
   font-size: 2rem;
   color: #aaa;
 }
+
+/* ---------- Block Footer ----------  */
+
+.footer {
+  background: #232323;
+}
+
+.footer__section {
+  padding: 2rem 0 3rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer .collapsible__heading {
+  color: var(--color-text-light);
+  font-weight: 600;
+  padding-left: 2rem;
+}
+.footer .collapsible__content {
+  color: #888;
+}
+
+.footer__brand {
+  margin: 5rem 0 0rem 0;
+}
+
+.footer__copyright {
+  color: #888;
+  font-size: 2rem;
+}
+
+.footer__logo-image {
+  width: 100%;
+  max-width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__brand {
+    order: 10;
+  }
+
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100vh;
+    font-size: 1.5rem;
+  }
+  .footer .collapsible__heading {
+    font-size: 1.6rem;
+  }
+
+  .footer__brand {
+    margin-top: 1rem;
+    order: -1;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__section {
+    border: none;
+  }
+
+  .footer .collapsible {
+    cursor: auto;
+  }
+
+  .footer__logo-image {
+    width: 100%;
+  }
+
+  .footer .grid {
+    column-gap: 3rem;
+  }
+}
