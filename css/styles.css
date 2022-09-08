@@ -727,6 +727,7 @@ a {
 
 .hero__image {
   width: 100%;
+  opacity: 0.8;
 }
 
 .hero__tagline {
