@@ -28,7 +28,6 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
@@ -832,6 +831,7 @@ a {
 
 .feature__content {
   align-self: center;
+  overflow-x: clip;
 }
 
 .feature__heading {
