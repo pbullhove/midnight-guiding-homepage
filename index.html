@@ -8,11 +8,10 @@
     <title>Bull - IT Consulting in Oslo</title>
   </head>
   <body>
-
+  
 <!-- Navbar -->
-
     <nav class="nav collapsible">
-      <a class="nav__brand" href="/">P. Bull</a>
+      <a class="logo" href="/">P. Bull</a>
       <svg class="icon icon--white nav__toggler">
         <use href="images/sprite.svg#menu"></use>
       </svg>
@@ -98,7 +97,7 @@
           </p>
           <a class="link-arrow" ref="#">LEARN MORE</a>
         </div>
-        <picture data-aos="zoom-in-right">
+        <picture class="feature__picture" data-aos="zoom-in-right">
           <!-- <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -364,61 +363,45 @@
       <div class="container grid footer__sections">
         <section class="collapsible footer__section">
           <div class="collapsible__header">
-            <h2 class="collapsible__heading">PRODUCTS</h2>
-            <svg class="icon icon--white collapsible__chevron">
-              <use href="images/sprite.svg#chevron" class="blue" />
-            </svg>
-          </div>
-          <div class="collapsible__content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-            doloribus.
-          </div>
-        </section>
-        <section class="collapsible footer__section">
-          <div class="collapsible__header">
-            <h2 class="collapsible__heading">ITEMS</h2>
+            <h2 class="collapsible__heading">LENKER</h2>
             <svg class="icon icon--white collapsible__chevron">
                 <use href="images/sprite.svg#chevron" class="blue" />
             </svg>
           </div>
           <div class="collapsible__content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-            doloribus.
+            <ul class="list footer__list">
+              <li><a class="footer__link" href="https://www.linkedin.com/in/peter-bull-hove-633a70172/">LinkedIn</a></li>
+              <li><a class="footer__link" href="https://github.com/pbullhove">GitHub</a></li>
+            </ul>
+          
           </div>
         </section>
         <section class="collapsible footer__section">
           <div class="collapsible__header">
-            <h2 class="collapsible__heading">LINKS</h2>
+            <h2 class="collapsible__heading">KONTAKT</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use href="images/sprite.svg#chevron" class="blue" />
             </svg>
           </div>
           <div class="collapsible__content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-            doloribus.
+            <ul class="list footer__list">
+              <li>
+                <a class="footer__link" href="mailto:peterbullhove@gmail.com">peterbullhove@gmail.com</a>
+              </li>
+            </ul>
           </div>
         </section>
-        <section class="collapsible footer__section">
-          <div class="collapsible__header">
-            <h2 class="collapsible__heading">COMPANY</h2>
-            <svg class="icon icon--white collapsible__chevron">
-              <use href="images/sprite.svg#chevron" class="blue" />
-            </svg>
-          </div>
-          <div class="collapsible__content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-            doloribus.
-          </div>
+        
+        
         </section>
         <div class="block__header footer__brand">
-          <img class="footer__logo-image" src="icons/logo.svg" alt="" />
-          <p class="footer__copyright">Copyright 2022 Peter Bull Hove</p>
+          <a class="logo" href="/">P. Bull</a>
+          <p class="footer__copyright">2022 Peter Bull Hove</p>
         </div>
       </div>
     </footer>
 
 <!-- Scripts -->
-    
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

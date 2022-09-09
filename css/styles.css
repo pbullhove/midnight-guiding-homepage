@@ -659,7 +659,7 @@ a {
   align-items: center;
 }
 
-.nav__brand {
+.logo {
   margin-left: 0.5rem;
   font-family: "Square Peg";
   color: white;
@@ -802,6 +802,10 @@ a {
   margin: 1rem 0;
 }
 
+.feature__picture {
+  width: 100%;
+}
+
 .feature__image {
   width: 100%;
 }
@@ -860,11 +864,23 @@ a {
   font-size: 2rem;
 }
 
+.footer__link {
+  color: #888;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: white;
+}
+
 .footer__logo-image {
   width: 100%;
   max-width: 250px;
 }
 
+.footer__list {
+  margin-top: 0;
+}
 @media screen and (min-width: 768px) {
   .footer__brand {
     order: 10;
