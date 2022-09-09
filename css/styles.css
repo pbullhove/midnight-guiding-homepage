@@ -2,7 +2,7 @@
 
 :root {
   --color-primary: rgb(0, 122, 252);
-  --color-secondary: rgb(62, 204, 243);
+  --color-secondary: #fd920f;
   --color-accent: rgb(248, 50, 50);
   --color-bg-dark: rgb(32, 32, 32);
   --color-bg-light: #fefefe;
@@ -191,6 +191,10 @@ a {
   fill: white;
 }
 
+.icon--black {
+  fill: black;
+}
+
 .icon-container {
   width: 64px;
   height: 64px;
@@ -198,6 +202,10 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--secondary {
+  background: var(--color-secondary);
 }
 
 .icon-container--black {
@@ -262,6 +270,17 @@ a {
   border: 2px solid var(--color-heading);
 }
 
+.btn--black {
+  background: var(--color-heading);
+  color: var(--color-bg-light);
+  border: 2px solid var(--color-heading);
+}
+.btn--black:hover {
+  background: var(--color-bg-light);
+  color: var(--color-heading);
+  border: 2px solid var(--color-heading);
+}
+
 .btn--primary:hover {
   filter: brightness(1.15);
 }
@@ -285,10 +304,10 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .btn {
+  /* .btn {
     font-size: 1.5rem;
     padding: 2rem 4rem;
-  }
+  } */
 }
 
 /* ---------- Inputs ----------  */
@@ -477,6 +496,10 @@ a {
   font-style: normal;
 }
 
+.quote__btn {
+  margin-top: 25rem;
+  transform: translateX(-6rem);
+}
 /* ---------- Grids ----------  */
 
 .grid {
@@ -534,7 +557,7 @@ a {
   padding: 4rem;
   border-radius: 5px;
   text-align: center;
-  transform: translateY(50px);
+  transform: translateY(40px);
 }
 
 .callout .btn {
@@ -544,6 +567,16 @@ a {
 
 .callout--primary {
   background: var(--color-primary);
+  color: white;
+}
+
+.callout--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.callout--accent {
+  background: var(--color-accent);
   color: white;
 }
 
