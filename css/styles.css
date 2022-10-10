@@ -497,7 +497,12 @@ a {
 
 .quote__btn {
   margin-top: 25rem;
-  transform: translateX(-6rem);
+}
+
+@media screen and (min-width: 768px) {
+  .quote__btn {
+    transform: translateX(-6rem);
+  }
 }
 /* ---------- Grids ----------  */
 
