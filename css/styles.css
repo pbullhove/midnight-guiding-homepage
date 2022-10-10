@@ -762,6 +762,7 @@ a {
 .hero__image {
   width: 100%;
   opacity: 0.8;
+  border-radius: 10px;
 }
 
 .hero__tagline {
@@ -844,6 +845,7 @@ a {
 
 .feature__image {
   width: 100%;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 768px) {
